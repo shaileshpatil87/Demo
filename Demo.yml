@@ -1,0 +1,11 @@
+---
+- Name: Demo Playbook  
+  hosts: all
+  become: yes
+  tasks:
+    - name: Run Demo task of pinging server
+      ping:
+    - name: Debug task  
+      debug:
+        msg: "{{ ansible_facts }}"
+       
